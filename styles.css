@@ -148,6 +148,25 @@ img {
   gap: var(--space-md);
 }
 
+.language-toggle {
+  flex-shrink: 0;
+  padding: 0.45rem 0.7rem;
+  border: 1px solid var(--sand-200);
+  border-radius: var(--radius-full);
+  background-color: var(--white);
+  color: var(--ocean-800);
+  font: 600 0.85rem var(--font-heading);
+  cursor: pointer;
+  transition: border-color var(--transition-fast), color var(--transition-fast), background-color var(--transition-fast);
+}
+
+.language-toggle:hover,
+.language-toggle:focus-visible {
+  border-color: var(--teal-400);
+  color: var(--ocean-900);
+  background-color: var(--sand-100);
+}
+
 .nav-link {
   font-family: var(--font-heading);
   font-size: 0.95rem;

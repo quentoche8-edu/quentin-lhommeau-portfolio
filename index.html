@@ -20,13 +20,14 @@
     <div class="container header-inner">
       <div class="brand">
         <a href="#top" class="brand-name">Quentin Lhommeau</a>
-        <span class="brand-tagline">Futur Ingénieur en Génie Maritime et Côtier</span>
+        <span class="brand-tagline" data-i18n="role">Futur Ingénieur en Génie Maritime et Côtier</span>
       </div>
-      <nav class="main-nav" aria-label="Navigation principale">
-        <a href="#about" class="nav-link">À propos</a>
-        <a href="#documents" class="nav-link">Documents</a>
-        <a href="#contact" class="nav-link">Contact</a>
+      <nav class="main-nav" id="main-nav" aria-label="Navigation principale">
+        <a href="#about" class="nav-link" data-i18n="navAbout">À propos</a>
+        <a href="#documents" class="nav-link" data-i18n="navDocuments">Documents</a>
+        <a href="#contact" class="nav-link" data-i18n="navContact">Contact</a>
       </nav>
+      <button class="language-toggle" type="button" aria-label="Switch page language to English" aria-pressed="false">EN</button>
       <button class="menu-toggle" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="main-nav">
         <span class="burger-line"></span>
         <span class="burger-line"></span>
@@ -40,10 +41,10 @@
       <div class="container">
         <p class="hero-eyebrow">Portfolio</p>
         <h1 class="hero-title">Quentin Lhommeau</h1>
-        <p class="hero-subtitle">Futur Ingénieur en Génie Maritime et Côtier</p>
+        <p class="hero-subtitle" data-i18n="role">Futur Ingénieur en Génie Maritime et Côtier</p>
         <div class="hero-actions">
-          <a href="#about" class="btn btn-primary">Découvrir mon profil</a>
-          <a href="#documents" class="btn btn-secondary">Voir mes rapports</a>
+          <a href="#about" class="btn btn-primary" data-i18n="discoverProfile">Découvrir mon profil</a>
+          <a href="#documents" class="btn btn-secondary" data-i18n="viewReports">Voir mes rapports</a>
         </div>
       </div>
     </section>
@@ -51,8 +52,8 @@
     <section id="about" class="section">
       <div class="container">
         <div class="section-header">
-          <span class="section-tag">Profil</span>
-          <h2>À propos de moi</h2>
+          <span class="section-tag" data-i18n="profile">Profil</span>
+          <h2 data-i18n="aboutTitle">À propos de moi</h2>
         </div>
 
         <div class="about-card">
@@ -63,51 +64,51 @@
                 <circle cx="50" cy="36" r="18" stroke="currentColor" stroke-width="3" />
                 <path d="M20 82c0-16.569 13.431-30 30-30s30 13.431 30 30" stroke="currentColor" stroke-width="3" stroke-linecap="round" />
               </svg>
-              <span>Photo de profil</span>
+              <span data-i18n="portraitPlaceholder">Photo de profil</span>
             </div>
           </div>
 
           <div class="about-content">
-            <p class="about-lead">
+            <p class="about-lead" data-i18n="aboutLead">
               Passionné par la mer, j'étudie à l'école d'ingénieur Seatech à Toulon en spécialité Génie Maritime. Je souhaite mettre mes compétences au service de projets innovants dans le domaine maritime, côtier et naval.
             </p>
-            <p class="about-text">
+            <p class="about-text" data-i18n="aboutText">
               Originaire du Mans, j'ai fait ma CPGE au lycée Montesquieu au Mans, puis j'ai intégré l'école d'ingénieur Seatech à Toulon. Je suis actuellement en 3ème année, spécialisé en Génie Maritime et Côtier. J'ai eu l'opportunité de réaliser un stage dans une voilerie en première année ainsi qu'à l'institut d'hydraulique IHCantabria en Espagne en deuxième année. Bien qu'étant dans une fillière de l'ingéniere maritime, j'aime aussi découvrir d'autres domaines, notamment l'informatique et la programmation, ainsi que la mécanique et l'électronique. Je suis également passionné par les sports nautiques, notamment la voile et le windsurf.
             </p>
 
             <div class="skills-grid">
               <div class="skills-block">
-                <h3>Compétences techniques</h3>
+                <h3 data-i18n="technicalSkills">Compétences techniques</h3>
                 <ul class="skills-list">
-                  <li>Mécaniques des fluides</li>
-                  <li>Hydrodynamique</li>
-                  <li>Simulation numérique</li>
+                  <li data-i18n="skillFluids">Mécaniques des fluides</li>
+                  <li data-i18n="skillHydrodynamics">Hydrodynamique</li>
+                  <li data-i18n="skillSimulation">Simulation numérique</li>
                   <li>AutoCAD</li>
-                  <li>Analyse de données et programmation Matlab</li>
-                  <li>Hydraulique et hydrodynamique côtière</li>
+                  <li data-i18n="skillMatlab">Analyse de données et programmation Matlab</li>
+                  <li data-i18n="skillCoastal">Hydraulique et hydrodynamique côtière</li>
 
                 </ul>
               </div>
               <div class="skills-block">
-                <h3>Compétences transversales</h3>
+                <h3 data-i18n="softSkills">Compétences transversales</h3>
                 <ul class="skills-list">
-                  <li>Anglais technique (905 TOEIC)</li>
-                  <li>Espagnol débutant</li>
-                  <li>Communication et vulgarisation scientifique</li>
-                  <li>Travail en équipe pluridisciplinaire</li>
-                  <li>Gestion de projet et planification</li>
+                  <li data-i18n="skillEnglish">Anglais technique (905 TOEIC)</li>
+                  <li data-i18n="skillSpanish">Espagnol débutant</li>
+                  <li data-i18n="skillCommunication">Communication et vulgarisation scientifique</li>
+                  <li data-i18n="skillTeamwork">Travail en équipe pluridisciplinaire</li>
+                  <li data-i18n="skillProject">Gestion de projet et planification</li>
 
                 </ul>
               </div>
             </div>
 
-            <a href="CV.pdf" class="btn btn-primary" download>
+            <a href="CV.pdf" class="btn btn-primary" data-cv-link download>
               <svg class="btn-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                 <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
                 <polyline points="7 10 12 15 17 10" />
                 <line x1="12" y1="15" x2="12" y2="3" />
               </svg>
-              Télécharger mon CV
+              <span data-i18n="downloadCv">Télécharger mon CV</span>
             </a>
           </div>
         </div>
@@ -117,9 +118,9 @@
     <section id="documents" class="section section-alt">
       <div class="container">
         <div class="section-header">
-          <span class="section-tag">Rapports et Projets</span>
-          <h2>Mes documents et rapports</h2>
-          <p class="section-intro">Retrouvez ci-dessous une sélection de mes rapports de stage et projets techniques.</p>
+          <span class="section-tag" data-i18n="reportsProjects">Rapports et Projets</span>
+          <h2 data-i18n="documentsTitle">Mes documents et rapports</h2>
+          <p class="section-intro" data-i18n="documentsIntro">Retrouvez ci-dessous une sélection de mes rapports de stage et projets techniques.</p>
         </div>
         <div class="documents-grid">
           <article class="document-card">
@@ -134,8 +135,8 @@
             </div>
             <div class="document-body">
               <h3>Abstract for ICE breakwater 2027 - IHCantabria</h3>
-              <p>Co-rédaction d'un abstract pour promouvoir mes travaux réalisés lors de mon stage de 2ème année sur l'adaptation des équations EurOtop pour les brises vagues en construction. Le sujet doit être défendu par mon maître de stage lors du congrès ICE breakwater 2027.</p>
-              <a href="c:\Users\Quentin Lhommeau\Documents\latex\CV\aout_2026_claude_upgrade\main.pdfabstract_ice.pdf" class="btn btn-outline" download>Télécharger le PDF</a>
+              <p data-i18n="abstractDescription">Co-rédaction d'un abstract pour promouvoir mes travaux réalisés lors de mon stage de 2ème année sur l'adaptation des équations EurOtop pour les brises vagues en construction. Le sujet doit être défendu par mon maître de stage lors du congrès ICE breakwater 2027.</p>
+              <a href="c:\Users\Quentin Lhommeau\Documents\latex\CV\aout_2026_claude_upgrade\main.pdfabstract_ice.pdf" class="btn btn-outline" download data-i18n="downloadPdf">Télécharger le PDF</a>
             </div>
           </article>
 
@@ -150,9 +151,9 @@
               </svg>
             </div>
             <div class="document-body">
-              <h3>Rapport de stage 2ème année - IHCantabria</h3>
-              <p>Stage de 4 mois dans un institut d'hydraulique à Santander en Espagne. L'objectif était de corriger les équations EurOtop servant au dimensionnement des brises vagues. La modification portait sur la prise en compte des brises vagues en cours de construction. A l'aide d'un logiciel de CFD dévellopé par IHCantabria, j'ai pu proposer une correction d'une équation EurOtop accompagnée de sa méthodologie permettant de prévoir les risques d'Overtopping en fonction de l'état de construction de la structure.</p>
-              <a href="rapport-de-stage-2A.pdf" class="btn btn-outline" download>Télécharger le PDF</a>
+              <h3 data-i18n="internship2Title">Rapport de stage 2ème année - IHCantabria</h3>
+              <p data-i18n="internship2Description">Stage de 4 mois dans un institut d'hydraulique à Santander en Espagne. L'objectif était de corriger les équations EurOtop servant au dimensionnement des brises vagues. La modification portait sur la prise en compte des brises vagues en cours de construction. A l'aide d'un logiciel de CFD dévellopé par IHCantabria, j'ai pu proposer une correction d'une équation EurOtop accompagnée de sa méthodologie permettant de prévoir les risques d'Overtopping en fonction de l'état de construction de la structure.</p>
+              <a href="rapport-de-stage-2A.pdf" class="btn btn-outline" download data-i18n="downloadPdf">Télécharger le PDF</a>
             </div>
           </article>
 
@@ -167,9 +168,9 @@
               </svg>
             </div>
             <div class="document-body">
-              <h3>Rapport de projet 2ème année - Etude de l'influence du déferlement sur la génération des vagues.</h3>
-              <p>Etude de "l'instinct des surfeurs", l'objectif de ce projet était de quantifier ce qu'évaluent les surfeurs pour savoir si les vagues sont bonnes et quelle vague ils vont surfer. Il est apparu que le paramètre le plus important à étudier est la distance déferlement. Celle-ci est facilement observable par le surfeur et reflète l'énergie de la vague</p>
-              <a href="Projet_surf_2A.pdf" class="btn btn-outline" download>Télécharger le PDF</a>
+              <h3 data-i18n="surfProjectTitle">Rapport de projet 2ème année - Etude de l'influence du déferlement sur la génération des vagues.</h3>
+              <p data-i18n="surfProjectDescription">Etude de "l'instinct des surfeurs", l'objectif de ce projet était de quantifier ce qu'évaluent les surfeurs pour savoir si les vagues sont bonnes et quelle vague ils vont surfer. Il est apparu que le paramètre le plus important à étudier est la distance déferlement. Celle-ci est facilement observable par le surfeur et reflète l'énergie de la vague</p>
+              <a href="Projet_surf_2A.pdf" class="btn btn-outline" download data-i18n="downloadPdf">Télécharger le PDF</a>
             </div>
           </article>
 
@@ -184,9 +185,9 @@
               </svg>
             </div>
             <div class="document-body">
-              <h3>Rapport de stage 1ère année - Incidences Sails Méditéranée</h3>
-              <p>Stage ouvrier de 1 mois dans la plus importante voilerie française. Découverte du métier, apprentissage des techniques de construction et de réparation des voiles. Gestion du montage des voiles sur le voilier des clients.</p>
-              <a href="rapport_stage_1A.pdf" class="btn btn-outline" download>Télécharger le PDF</a>
+              <h3 data-i18n="internship1Title">Rapport de stage 1ère année - Incidences Sails Méditéranée</h3>
+              <p data-i18n="internship1Description">Stage ouvrier de 1 mois dans la plus importante voilerie française. Découverte du métier, apprentissage des techniques de construction et de réparation des voiles. Gestion du montage des voiles sur le voilier des clients.</p>
+              <a href="rapport_stage_1A.pdf" class="btn btn-outline" download data-i18n="downloadPdf">Télécharger le PDF</a>
             </div>
           </article>
 
@@ -201,9 +202,9 @@
               </svg>
             </div>
             <div class="document-body">
-              <h3>Rapport de projet 1ère année— En collaboration avec SubSea7</h3>
-              <p>Etude de la faisabilité d'un parc hybride éolien/solaire offshore en mer de Chine pour alimenter une plateforme offshore. Etude de la bathymétrie, de son rendement théorique planification du coût que représenterait une telle exploitation. Première expérience dans la gestion de projet dans une équipe de 10 étudiants.</p>
-              <a href="rapport_subsea.pdf" class="btn btn-outline" download>Télécharger le PDF</a>
+              <h3 data-i18n="subseaTitle">Rapport de projet 1ère année— En collaboration avec SubSea7</h3>
+              <p data-i18n="subseaDescription">Etude de la faisabilité d'un parc hybride éolien/solaire offshore en mer de Chine pour alimenter une plateforme offshore. Etude de la bathymétrie, de son rendement théorique planification du coût que représenterait une telle exploitation. Première expérience dans la gestion de projet dans une équipe de 10 étudiants.</p>
+              <a href="rapport_subsea.pdf" class="btn btn-outline" download data-i18n="downloadPdf">Télécharger le PDF</a>
             </div>
           </article>
         </div>
@@ -214,14 +215,14 @@
   <footer id="contact" class="site-footer">
     <div class="container footer-inner">
       <div class="footer-brand">
-        <strong>Portfolio de Quentin Lhommeau</strong>
-        <span>Futur Ingénieur en Génie Maritime et Côtier</span>
+        <strong data-i18n="footerPortfolio">Portfolio de Quentin Lhommeau</strong>
+        <span data-i18n="role">Futur Ingénieur en Génie Maritime et Côtier</span>
       </div>
       <div class="footer-contact">
         <a href="mailto:quentin.lhommeau@email.com" class="contact-link">quentin.lhommeau@hotmail.fr</a>
         <a href="https://www.linkedin.com/in/quentin-lhommeau-22500527b" target="_blank" rel="noopener noreferrer" class="contact-link">LinkedIn</a>
       </div>
-      <p class="footer-copy">© 2026 Quentin Lhommeau. Tous droits réservés.</p>
+      <p class="footer-copy" data-i18n="copyright">© 2026 Quentin Lhommeau. Tous droits réservés.</p>
     </div>
   </footer>
 
